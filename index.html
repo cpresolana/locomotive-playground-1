@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+
+</head>
+
+<body>
+    <div class="container" data-scroll-container>
+        <section class="section py" data-scroll-section>
+            <h2 data-scroll data-scroll-speed="4" data-scroll-positoin="top">
+                Let's scroll
+            </h2>
+            <p data-scroll data-scroll-speed="-4" data-scroll-direction="horizontal">
+                Please scroll down
+            </p>
+        </section>
+        <section id="gallery" data-scroll-section>
+            <div class="grid">
+                <div class="img">
+                    <img src="./img/4.jpg" alt="" />
+                    <img src="./img/8.jpg" alt="" />
+                    <img src="./img/03.jpg" alt="" />
+                    <img src="./img/7.jpg" alt="" />
+                </div>
+
+                <div>
+                    <img src="./img/1.jpg" data-scroll data-scroll-sticky data-scroll-target="#gallery"
+                        data-scroll-speed="1.2" />
+                </div>
+            </div>
+        </section>
+        <section id="threeD" class="threeD" data-scroll-section>
+            <h2>
+                <span data-scroll data-scroll-repeat data-scroll-speed="5">3</span>
+                <span data-scroll data-scroll-repeat data-scroll-speed="2">D</span>
+                <span data-scroll data-scroll-repeat data-scroll-speed="3">V</span>
+                <span data-scroll data-scroll-repeat data-scroll-speed="5">i</span>
+                <span data-scroll data-scroll-repeat data-scroll-speed="2">b</span>
+                <span data-scroll data-scroll-repeat data-scroll-speed="4">e</span>
+                <span data-scroll data-scroll-repeat data-scroll-speed="2">s</span>
+            </h2>
+            <div class="skewsec">
+                <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="20" data-scroll-target="#threeD">
+                    <span>Lorem ipsum dolor sit amet</span>
+                </div>
+            </div>
+            <div class="skewsec">
+                <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="-20"
+                    data-scroll-target="#threeD">
+                    <span class="">Lorem ipsum dolor sit amet</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="subs" data-scroll-section>
+            <h2 data-scroll data-scroll-repeat>
+                <span data-scroll data-scroll-delay="0.15" data-scroll-speed="5">G</span>
+                <span data-scroll data-scroll-delay="0.095" data-scroll-speed="5">o</span>
+                <span data-scroll data-scroll-delay="0.085" data-scroll-speed="5">o</span>
+                <span data-scroll data-scroll-delay="0.075" data-scroll-speed="5">d</span>
+                <span data-scroll data-scroll-delay="0.065" data-scroll-speed="5">b</span>
+                <span data-scroll data-scroll-delay="0.055" data-scroll-speed="5">y</span>
+                <span data-scroll data-scroll-delay="0.045" data-scroll-speed="5">e</span>
+                <!--<span data-scroll data-scroll-delay="0.035" data-scroll-speed="5">B</span>
+                <span data-scroll data-scroll-delay="0.035" data-scroll-speed="5">E</span>-->
+            </h2>
+        </section>
+        <div class="footer" data-scroll-section>
+            <h1 data-scroll data-scroll-speed="4" data-scroll-position="bottom">
+                c.presolana
+            </h1>
+        </div>
+    </div>
+
+    <script src="./scripts/locomotive-scroll.min.js"></script>
+    <script src="./scripts/script.js"></script>
+
+</body>
+
+</html>
